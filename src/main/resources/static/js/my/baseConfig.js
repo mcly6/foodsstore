@@ -1,0 +1,6 @@
+
+
+function BaseURL() {
+
+    return "/store";
+}
