@@ -54,6 +54,8 @@ superAdmin:
   #登录地址
   adminPage: /super/admin_index
 
+  #测试输入
+
 
 
 
