@@ -48,25 +48,5 @@ public class OrderDetailRepositoryTest {
         }
     }
 
-    @Test
-    public void getTest01() {
 
-    }
-
-    /**  .*/
-    private String cc ;
-    
-    
-    public String getStr() {
-
-        String bb =  getString();
-        return bb;
-
-    }
-
-    private String getString() {
-        this.bb = this.cc;
-
-        return this.bb;
-    }
 }
