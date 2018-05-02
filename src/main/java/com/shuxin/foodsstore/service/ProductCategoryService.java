@@ -18,7 +18,6 @@ public interface ProductCategoryService {
 
     void delete(Integer id);
 
-
     Map<Integer, List<ProductCategory>> findAllOrderByCategoryType(Sort categorySerial ,Integer categoryModel);
 
     List<ProductCategory> findAllBycategomodeAndCategoryModel(Integer categoryModel);
