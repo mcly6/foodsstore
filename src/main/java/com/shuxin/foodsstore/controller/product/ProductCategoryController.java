@@ -31,7 +31,7 @@ public class ProductCategoryController {
     @Autowired
     private ProductCategoryService categoryService;
     @Autowired
-    private ProductInfoService     infoService;
+    private ProductInfoService infoService;
 
     /**
      * @Title: add 添加或修改
@@ -54,7 +54,6 @@ public class ProductCategoryController {
     @RequestMapping("/delete")
     @ResponseBody
     public ResultVO delete(@RequestParam("id") Integer id) {
-
         // 根据类目查询类目下是否有商品信息
         List<ProductInfo> infoList = infoService.findAllByCategoryType(id);
 
@@ -99,7 +98,7 @@ public class ProductCategoryController {
     @RequestMapping("/categoryGrid")
     @ResponseBody
     public TableVO getCategoryGrid() {
-        Sort                  sort         = new Sort(Sort.Direction.ASC, "categorySerial");
+        Sort sort = new Sort(Sort.Direction.ASC, "categorySerial");
         List<ProductCategory> categoryList = categoryService.findAll(sort);
 
         return TableVOResultUtils.success(categoryList);
